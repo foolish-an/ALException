@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = 'ALException'
-    s.version      = '1.0.0'
+    s.version      = '1.0.1'
     s.summary      = 'OC show view with networkerror or nodata'
     s.homepage     = 'https://github.com/foolish-an/ALException'
     s.license      = 'MIT'

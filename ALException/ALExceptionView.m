@@ -212,6 +212,15 @@ static void *al_placeholder_first_null_data_visible = &al_placeholder_first_null
     self.al_exceptionView.mode = ALExceptionViewModeNoNetwork;
 }
 
+- (ALExceptionView *)ik_insertExceptionView:(NSString *)explain imageString:(NSString *)imgString {
+    
+    ALExceptionView *view = self.al_insertExceptionView;
+    [view setImage:[UIImage imageNamed:imgString] forMode:ALExceptionViewModeNoData];
+    [view setExplain:explain forMode:ALExceptionViewModeNoData];
+    return view;
+}
+
+
 - (void)al_quiteNormal
 {
     if (!self.al_exceptionView) return;

@@ -55,5 +55,11 @@ typedef NS_ENUM(NSInteger, ALExceptionViewMode) {
 - (void)al_networkError;
 /***  正常获取数据,不是列表视图方便调用  **/
 - (void)al_quiteNormal;
+
+/*1.0.1
+ ik api
+ */
+- (ALExceptionView *)ik_insertExceptionView:(NSString *)explain imageString:(NSString *)imgString;
+
 @end
 
